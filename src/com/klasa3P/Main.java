@@ -1,5 +1,7 @@
 package com.klasa3P;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Witaj w Javie");
@@ -15,5 +17,11 @@ public class Main {
         //rzutowanie zawężające
         double innnaLiczba =wylosowana;//konwersja rozszerzająca
         System.out.println("Wylosowano "+wylosowana);
+
+        Scanner klawiatura = new Scanner(System.in);
+        System.out.println("podaj liczbę");
+        int wczytana;
+        wczytana = klawiatura.nextInt();
+        System.out.println("wpisałeś "+wczytana);
     }
 }
